@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUASCO | Laboratorio de Ingeniería</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Paleta de colores exacta extraída del logo de SUASCO */
         :root {
             --azul-suasco: #1d2d5c;
             --ocre-suasco: #a3803b;
+            --azul-dark: #121c3a;
         }
 
-        /* Capa con tinte azul marino + tu foto de fondo original */
         .hero-bg { 
-            background: linear-gradient(rgba(29, 45, 92, 0.65), rgba(0, 0, 0, 0.7)), 
-            url('IMG_1130.jpg'); 
+            background: linear-gradient(rgba(29, 45, 92, 0.75), rgba(18, 28, 58, 0.9)), 
+                        url('IMG_1130.jpg'), 
+                        url('https://images.unsplash.com/photo-1581094120527-135f0817300c?auto=format&fit=crop&w=1920&q=80'); 
             background-size: cover; 
             background-position: center; 
+            background-attachment: fixed;
         }
 
-        /* Clases personalizadas para aplicar los colores exactos */
         .bg-azul-suasco { background-color: var(--azul-suasco); }
         .bg-ocre-suasco { background-color: var(--ocre-suasco); }
         .text-azul-suasco { color: var(--azul-suasco); }
@@ -28,51 +29,149 @@
         .border-azul-suasco { border-color: var(--azul-suasco); }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
-    
-    <nav class="bg-white shadow-md p-2 flex justify-between items-center sticky top-0 z-50">
-        <a href="index.html">
-            <img src="LOGO ORIGINAL PNG.png" alt="SUASCO Logo" class="h-16 w-auto object-contain">
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+
+    <nav class="bg-white shadow-md py-3 px-6 flex justify-between items-center sticky top-0 z-50">
+        <a href="#inicio">
+            <img src="LOGO ORIGINAL PNG.png" alt="SUASCO Logo" class="h-14 w-auto object-contain" 
+                 onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-bold text-xl text-[#1d2d5c]\'>SUASCO</span>'">
         </a>
-        <a href="mailto:contacto@suascolab.com" class="bg-azul-suasco text-white px-4 py-2 rounded-lg hover:opacity-90 transition font-medium">Cotizar</a>
+        
+        <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
+            <a href="#inicio" class="hover:text-azul-suasco transition-colors">Inicio</a>
+            <a href="#servicios" class="hover:text-azul-suasco transition-colors">Ensayos</a>
+            <a href="#calculadora" class="hover:text-azul-suasco transition-colors">Presupuestar</a>
+        </div>
+
+        <a href="mailto:contacto@suascolab.com" class="bg-azul-suasco text-white px-5 py-2.5 rounded-lg font-medium text-sm">Cotizar</a>
     </nav>
 
-    <section class="hero-bg h-[70vh] flex items-center justify-center text-center text-white p-6">
-        <div>
-            <h2 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-md">Ingeniería de Calidad</h2>
-            <p class="text-xl md:text-2xl text-gray-200 mb-8 drop-shadow-sm">Ensayos de Suelos, Asfalto y Concreto bajo normas ASTM y COVENIN</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#servicios" class="bg-ocre-suasco text-white px-8 py-3 rounded-full font-bold shadow-md hover:brightness-110 transition">Nuestros Servicios</a>
-                <a href="mailto:admon@suascolab.com" class="border-2 border-white bg-black/10 backdrop-blur-sm px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">Administración</a>
+    <section id="inicio" class="hero-bg min-h-[70vh] flex items-center justify-center text-center text-white p-6 relative">
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Ingeniería de Calidad</h1>
+            <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto drop-shadow-md font-light">
+                Ensayos de Suelos, Asfalto y Concreto bajo normas ASTM y COVENIN.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#servicios" class="bg-ocre-suasco text-white px-8 py-3 rounded-full font-bold shadow-lg hover:brightness-110 transition">Nuestros Servicios</a>
+                <a href="#calculadora" class="border-2 border-white bg-white/10 backdrop-blur-sm px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">Estimar Ensayo</a>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="py-16 px-6 max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-azul-suasco mb-12">Áreas de Especialización</h3>
+    <section id="servicios" class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-azul-suasco mb-12">Áreas de Especialización</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            
             <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-ocre-suasco">
-                <h4 class="text-xl font-bold mb-4 text-azul-suasco">Suelos</h4>
-                <p class="text-gray-600">Granulometría, Límites de Atterberg, Proctor, CBR y Densidad de Campo.</p>
+                <h3 class="text-xl font-bold mb-4 text-azul-suasco">Suelos</h3>
+                <p class="text-gray-600 mb-4">Granulometría, Límites de Atterberg, Proctor, CBR y Densidad de Campo.</p>
             </div>
-            
             <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-azul-suasco">
-                <h4 class="text-xl font-bold mb-4 text-azul-suasco">Concreto</h4>
-                <p class="text-gray-600">Resistencia a la compresión, Asentamiento (Cono de Abrams) y Diseño de Mezclas.</p>
+                <h3 class="text-xl font-bold mb-4 text-azul-suasco">Concreto</h3>
+                <p class="text-gray-600 mb-4">Resistencia a la compresión, Asentamiento (Cono de Abrams) y Diseño de Mezclas.</p>
             </div>
-            
             <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gray-700">
-                <h4 class="text-xl font-bold mb-4 text-azul-suasco">Asfalto</h4>
-                <p class="text-gray-600">Diseño Marshall, Extracción de núcleos y Control de pavimentación.</p>
+                <h3 class="text-xl font-bold mb-4 text-azul-suasco">Asfalto</h3>
+                <p class="text-gray-600 mb-4">Diseño Marshall, Extracción de núcleos y Control de pavimentación.</p>
             </div>
-            
         </div>
     </section>
 
-    <footer class="bg-azul-suasco text-white py-12 px-6 text-center border-t-4 border-ocre-suasco">
-        <p class="mb-4 font-bold text-lg">© 2026 SUASCO - Laboratorio de Ingeniería</p>
-        <p class="text-gray-300">contacto@suascolab.com | admon@suascolab.com</p>
+    <section id="calculadora" class="bg-gradient-to-br from-slate-900 to-azul-dark text-white py-24 px-6">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-ocre-suasco font-bold tracking-widest uppercase block mb-2 text-sm">Optimización de Solicitudes</span>
+                <h2 class="text-4xl font-extrabold mb-6 tracking-tight">Presupuesto Inmediato</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Seleccione los análisis requeridos. Al hacer clic en el botón, se generará una plantilla de correo estructurada para agilizar su orden técnica.
+                </p>
+                <div class="bg-white/5 border border-white/10 p-4 rounded-xl text-sm text-amber-400 font-medium">
+                    ⚠️ NOTA: Para procesar ofertas comerciales, es obligatorio adjuntar el RIF digital de la empresa solicitante.
+                </div>
+            </div>
+
+            <div class="bg-white text-gray-900 rounded-3xl p-8 shadow-2xl">
+                <h3 class="text-2xl font-bold text-azul-suasco mb-6 flex items-center gap-2">
+                    <i data-lucide="check-square" class="text-ocre-suasco"></i> Selección de Ensayos
+                </h3>
+                
+                <div id="listaEnsayos" class="space-y-3 max-h-[250px] overflow-y-auto pr-2 mb-6">
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <label class="flex items-center gap-3 cursor-pointer text-sm">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Granulometría por Tamizado (ASTM D422)">
+                            <span>Granulometría por Tamizado</span>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <label class="flex items-center gap-3 cursor-pointer text-sm">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Límites de Atterberg (ASTM D4318)">
+                            <span>Límites de Atterberg</span>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <label class="flex items-center gap-3 cursor-pointer text-sm">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Proctor Modificado (ASTM D1557)">
+                            <span>Proctor Modificado</span>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <label class="flex items-center gap-3 cursor-pointer text-sm">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Resistencia a la Compresión de Concreto - Set 4 Cilindros (ASTM C39)">
+                            <span>Compresión de Concreto (Set 4 Cilindros)</span>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <label class="flex items-center gap-3 cursor-pointer text-sm">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Diseño de Mezcla Marshall de Asfalto (ASTM D1559)">
+                            <span>Diseño Marshall Completo</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button id="btnCotizarCalculadora" class="w-full bg-azul-suasco text-white py-4 rounded-xl font-bold shadow-lg hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i> Enviar a Cotización Formal
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-azul-dark text-white py-12 px-6 text-center border-t-4 border-ocre-suasco">
+        <p class="mb-2 font-bold text-lg">© 2026 SUASCO - Laboratorio de Ingeniería</p>
+        <p class="text-gray-400 text-sm">contacto@suascolab.com | admon@suascolab.com</p>
     </footer>
+
+    <script>
+        lucide.createIcons();
+
+        document.getElementById('btnCotizarCalculadora').addEventListener('click', () => {
+            const seleccionados = Array.from(document.querySelectorAll('.chk-ensayo:checked'))
+                                      .map(chk => chk.getAttribute('data-nombre'));
+            
+            if (seleccionados.length === 0) {
+                alert("Por favor, seleccione al menos un ensayo para armar su solicitud.");
+                return;
+            }
+
+            const asunto = "Solicitud de Cotización de Servicios Técnicos - SUASCO";
+            
+            // Estructura de la plantilla que aparecerá escrita en el correo del cliente
+            const cuerpo = `Estimado Equipo de Ingeniería de SUASCO,\n\n` +
+                           `Solicitamos formalmente una propuesta económica para la ejecución de los siguientes ensayos seleccionados en su plataforma web:\n\n` + 
+                           seleccionados.map((e, idx) => `   [ ] Ensayos: ${e}`).join('\n') + 
+                           `\n\n--------------------------------------------------\n` +
+                           `DATOS DE PRESENTACIÓN DE LA EMPRESA SOLICITANTE:\n` +
+                           `--------------------------------------------------\n` +
+                           `• Nombre o Razón Social: \n` +
+                           `• Persona de Contacto / Cargo: \n` +
+                           `• Teléfono de Contacto: \n` +
+                           `• Ubicación / Ubicación de la Obra: \n\n` +
+                           `📎 IMPORTANTE PARA FACTURACIÓN / REGISTRO:\n` +
+                           `Por políticas de SUASCO, favor recordar adjuntar el RIF DIGITAL vigente junto con este correo para emitir la propuesta comercial correspondiente.\n\n` +
+                           `Quedamos atentos a sus comentarios técnicos y tiempos de entrega.\n\nSaludos cordiales.`;
+
+            // Ejecuta la acción abriendo el gestor con los datos codificados
+            window.location.href = `mailto:contacto@suascolab.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        });
+    </script>
 </body>
 </html>
