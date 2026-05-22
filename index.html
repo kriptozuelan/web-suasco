@@ -5,56 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUASCO | Laboratorio de Ingeniería</title>
     <script src="https://cdn.tailwindcss.com"></script>
-   <style>
-        /* Capa oscura + tu foto real de fondo para el laboratorio SUASCO */
+    <style>
+        /* Paleta de colores exacta extraída del logo de SUASCO */
+        :root {
+            --azul-suasco: #1d2d5c;
+            --ocre-suasco: #a3803b;
+        }
+
+        /* Capa con tinte azul marino + tu foto de fondo original */
         .hero-bg { 
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+            background: linear-gradient(rgba(29, 45, 92, 0.65), rgba(0, 0, 0, 0.7)), 
             url('IMG_1130.jpg'); 
             background-size: cover; 
             background-position: center; 
         }
+
+        /* Clases personalizadas para aplicar los colores exactos */
+        .bg-azul-suasco { background-color: var(--azul-suasco); }
+        .bg-ocre-suasco { background-color: var(--ocre-suasco); }
+        .text-azul-suasco { color: var(--azul-suasco); }
+        .border-ocre-suasco { border-color: var(--ocre-suasco); }
+        .border-azul-suasco { border-color: var(--azul-suasco); }
     </style>
 </head>
 <body class="bg-gray-50 font-sans">
-   <nav class="bg-white shadow-md p-2 flex justify-between items-center sticky top-0 z-50">
+    
+    <nav class="bg-white shadow-md p-2 flex justify-between items-center sticky top-0 z-50">
         <a href="index.html">
             <img src="LOGO ORIGINAL PNG.png" alt="SUASCO Logo" class="h-16 w-auto object-contain">
         </a>
-        <a href="mailto:contacto@suascolab.com" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Cotizar</a>
+        <a href="mailto:contacto@suascolab.com" class="bg-azul-suasco text-white px-4 py-2 rounded-lg hover:opacity-90 transition font-medium">Cotizar</a>
     </nav>
 
     <section class="hero-bg h-[70vh] flex items-center justify-center text-center text-white p-6">
         <div>
-            <h2 class="text-4xl md:text-6xl font-bold mb-4">Ingeniería de Calidad</h2>
-            <p class="text-xl md:text-2xl text-gray-200 mb-8">Ensayos de Suelos, Asfalto y Concreto bajo normas ASTM y COVENIN</p>
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-md">Ingeniería de Calidad</h2>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 drop-shadow-sm">Ensayos de Suelos, Asfalto y Concreto bajo normas ASTM y COVENIN</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#servicios" class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold">Nuestros Servicios</a>
-                <a href="mailto:admon@suascolab.com" class="border-2 border-white px-8 py-3 rounded-full font-bold">Administración</a>
+                <a href="#servicios" class="bg-ocre-suasco text-white px-8 py-3 rounded-full font-bold shadow-md hover:brightness-110 transition">Nuestros Servicios</a>
+                <a href="mailto:admon@suascolab.com" class="border-2 border-white bg-black/10 backdrop-blur-sm px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">Administración</a>
             </div>
         </div>
     </section>
 
     <section id="servicios" class="py-16 px-6 max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-blue-900 mb-12">Áreas de Especialización</h3>
+        <h3 class="text-3xl font-bold text-center text-azul-suasco mb-12">Áreas de Especialización</h3>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-yellow-500">
-                <h4 class="text-xl font-bold mb-4">Suelos</h4>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-ocre-suasco">
+                <h4 class="text-xl font-bold mb-4 text-azul-suasco">Suelos</h4>
                 <p class="text-gray-600">Granulometría, Límites de Atterberg, Proctor, CBR y Densidad de Campo.</p>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gray-500">
-                <h4 class="text-xl font-bold mb-4">Concreto</h4>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-azul-suasco">
+                <h4 class="text-xl font-bold mb-4 text-azul-suasco">Concreto</h4>
                 <p class="text-gray-600">Resistencia a la compresión, Asentamiento (Cono de Abrams) y Diseño de Mezclas.</p>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-black">
-                <h4 class="text-xl font-bold mb-4">Asfalto</h4>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gray-700">
+                <h4 class="text-xl font-bold mb-4 text-azul-suasco">Asfalto</h4>
                 <p class="text-gray-600">Diseño Marshall, Extracción de núcleos y Control de pavimentación.</p>
             </div>
+            
         </div>
     </section>
 
-    <footer class="bg-blue-900 text-white py-12 px-6 text-center">
-        <p class="mb-4">© 2026 SUASCO - Laboratorio de Ingeniería</p>
-        <p class="text-gray-400">contacto@suascolab.com | admon@suascolab.com</p>
+    <footer class="bg-azul-suasco text-white py-12 px-6 text-center border-t-4 border-ocre-suasco">
+        <p class="mb-4 font-bold text-lg">© 2026 SUASCO - Laboratorio de Ingeniería</p>
+        <p class="text-gray-300">contacto@suascolab.com | admon@suascolab.com</p>
     </footer>
 </body>
 </html>
