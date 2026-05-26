@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUASCO | Laboratorio de Ingeniería</title>
+    <title>SUASCO | Laboratorio de Ingeniería - El Tigre y Maturín</title>
     <link rel="icon" type="image/png" href="LOGO ORIGINAL PNG.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SUASCO - Laboratorio de Ingeniería",
+      "image": "https://suascolab.com/LOGO ORIGINAL PNG.png",
+      "url": "https://suascolab.com/",
+      "email": "contacto@suascolab.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "El Tigre",
+        "addressRegion": "Anzoátegui",
+        "addressCountry": "VE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 8.8875,
+        "longitude": -64.2454
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "El Tigre"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Maturín"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Anaco"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Puerto La Cruz"
+        }
+      ],
+      "knowsAbout": [
+        "Ensayos de Suelos",
+        "Control de Calidad de Concreto",
+        "Diseño Marshall de Asfalto",
+        "Normas COVENIN",
+        "Normas ASTM",
+        "Ingeniería Civil"
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --azul-suasco: #1d2d5c;
@@ -49,9 +98,9 @@
 
     <section id="inicio" class="hero-bg min-h-[70vh] flex items-center justify-center text-center text-white p-6 relative">
         <div class="relative z-10 max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Ingeniería de Calidad</h1>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Ingeniería de Calidad en el Oriente</h1>
             <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto drop-shadow-md font-light">
-                Ensayos de Suelos, Asfalto y Concreto bajo normas ASTM y COVENIN.
+                Ensayos de Suelos, Asfalto y Concreto bajo normas ASTM y COVENIN con cobertura en El Tigre, Maturín y toda la región oriental.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="#servicios" class="bg-ocre-suasco text-white px-8 py-3 rounded-full font-bold shadow-lg hover:brightness-110 transition">Nuestros Servicios</a>
@@ -61,19 +110,20 @@
     </section>
 
     <section id="servicios" class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center text-azul-suasco mb-12">Áreas de Especialización</h2>
+        <h2 class="text-3xl font-bold text-center text-azul-suasco mb-2">Áreas de Especialización</h2>
+        <p class="text-center text-gray-500 mb-12 max-w-xl mx-auto text-sm md:text-base">Control de calidad de materiales bajo estrictas especificaciones técnicas para proyectos civiles e industriales.</p>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-ocre-suasco">
                 <h3 class="text-xl font-bold mb-4 text-azul-suasco">Suelos</h3>
-                <p class="text-gray-600 mb-4">Granulometría, Límites de Atterberg, Proctor, CBR y Densidad de Campo.</p>
+                <p class="text-gray-600 mb-4">Granulometría, Límites de Atterberg, Proctor, CBR y Densidad de Campo (Cono de Arena).</p>
             </div>
             <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-azul-suasco">
                 <h3 class="text-xl font-bold mb-4 text-azul-suasco">Concreto</h3>
-                <p class="text-gray-600 mb-4">Resistencia a la compresión, Asentamiento (Cono de Abrams) y Diseño de Mezclas.</p>
+                <p class="text-gray-600 mb-4">Resistencia a la compresión de cilindros, Asentamiento (Cono de Abrams) y Diseño de Mezclas.</p>
             </div>
             <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gray-700">
                 <h3 class="text-xl font-bold mb-4 text-azul-suasco">Asfalto</h3>
-                <p class="text-gray-600 mb-4">Diseño Marshall, Extracción de núcleos y Control de pavimentación.</p>
+                <p class="text-gray-600 mb-4">Diseño Marshall, Extracción de núcleos (Coring) y Control de pavimentación en obra.</p>
             </div>
         </div>
     </section>
@@ -84,7 +134,7 @@
                 <span class="text-ocre-suasco font-bold tracking-widest uppercase block mb-2 text-sm">Optimización de Solicitudes</span>
                 <h2 class="text-4xl font-extrabold mb-6 tracking-tight">Presupuesto Inmediato</h2>
                 <p class="text-gray-300 leading-relaxed mb-6">
-                    Seleccione los análisis requeridos. Al hacer clic en el botón, se generará una plantilla de correo estructurada para agilizar su orden técnica.
+                    Seleccione los análisis requeridos para su proyecto. Al hacer clic en el botón, se generará una plantilla de correo estructurada para agilizar la atención técnica de su orden en nuestras zonas de cobertura.
                 </p>
                 <div class="bg-white/5 border border-white/10 p-4 rounded-xl text-sm text-amber-400 font-medium">
                     ⚠️ NOTA: Para procesar ofertas comerciales, es obligatorio adjuntar el RIF digital de la empresa solicitante.
@@ -99,31 +149,31 @@
                 <div id="listaEnsayos" class="space-y-3 max-h-[250px] overflow-y-auto pr-2 mb-6">
                     <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
                         <label class="flex items-center gap-3 cursor-pointer text-sm">
-                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Granulometría por Tamizado (ASTM D422)">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Granulometría por Tamizado (ASTM D422 / COVENIN)">
                             <span>Granulometría por Tamizado</span>
                         </label>
                     </div>
                     <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
                         <label class="flex items-center gap-3 cursor-pointer text-sm">
-                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Límites de Atterberg (ASTM D4318)">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Límites de Atterberg (ASTM D4318 / COVENIN)">
                             <span>Límites de Atterberg</span>
                         </label>
                     </div>
                     <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
                         <label class="flex items-center gap-3 cursor-pointer text-sm">
-                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Proctor Modificado (ASTM D1557)">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Proctor Modificado (ASTM D1557 / COVENIN)">
                             <span>Proctor Modificado</span>
                         </label>
                     </div>
                     <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
                         <label class="flex items-center gap-3 cursor-pointer text-sm">
-                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Resistencia a la Compresión de Concreto - Set 4 Cilindros (ASTM C39)">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Resistencia a la Compresión de Concreto - Set 4 Cilindros (ASTM C39 / COVENIN)">
                             <span>Compresión de Concreto (Set 4 Cilindros)</span>
                         </label>
                     </div>
                     <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
                         <label class="flex items-center gap-3 cursor-pointer text-sm">
-                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Diseño de Mezcla Marshall de Asfalto (ASTM D1559)">
+                            <input type="checkbox" class="chk-ensayo rounded text-[#1d2d5c] w-4 h-4" data-nombre="Diseño de Mezcla Marshall de Asfalto (ASTM D1559 / COVENIN)">
                             <span>Diseño Marshall Completo</span>
                         </label>
                     </div>
@@ -137,8 +187,11 @@
     </section>
 
     <footer class="bg-azul-dark text-white py-12 px-6 text-center border-t-4 border-ocre-suasco">
-        <p class="mb-2 font-bold text-lg">© 2026 SUASCO - Laboratorio de Ingeniería</p>
-        <p class="text-gray-400 text-sm">contacto@suascolab.com | admon@suascolab.com</p>
+        <p class="mb-1 font-bold text-lg">© 2026 SUASCO - Laboratorio de Ingeniería</p>
+        <p class="text-gray-300 text-sm max-w-xl mx-auto mb-4 font-light">
+            Sede Principal: El Tigre, Estado Anzoátegui. | Cobertura de Ensayos Técnicos en todo el Oriente del País (Maturín, Anaco, San Tomé, Puerto La Cruz).
+        </p>
+        <p class="text-gray-400 text-xs">contacto@suascolab.com | admon@suascolab.com</p>
     </footer>
 
     <script>
@@ -155,7 +208,6 @@
 
             const asunto = "Solicitud de Cotización de Servicios Técnicos - SUASCO";
             
-            // Estructura de la plantilla que aparecerá escrita en el correo del cliente
             const cuerpo = `Estimado Equipo de Ingeniería de SUASCO,\n\n` +
                            `Solicitamos formalmente una propuesta económica para la ejecución de los siguientes ensayos seleccionados en su plataforma web:\n\n` + 
                            seleccionados.map((e, idx) => `   [ ] Ensayos: ${e}`).join('\n') + 
@@ -170,7 +222,6 @@
                            `Por políticas de SUASCO, favor recordar adjuntar el RIF DIGITAL vigente junto con este correo para emitir la propuesta comercial correspondiente.\n\n` +
                            `Quedamos atentos a sus comentarios técnicos y tiempos de entrega.\n\nSaludos cordiales.`;
 
-            // Ejecuta la acción abriendo el gestor con los datos codificados
             window.location.href = `mailto:contacto@suascolab.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
         });
     </script>
