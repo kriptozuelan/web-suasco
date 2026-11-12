@@ -1,0 +1,87 @@
+# SUASCO — Laboratorio de Ingeniería, Control de Calidad y Geotecnia
+
+> Laboratorio SUASCO, C.A. (RIF: J-30871900-5) es un laboratorio venezolano de ingeniería civil, geotecnia y control de calidad de materiales fundado en 2010, con sede principal en El Tigre, Estado Anzoátegui, y cobertura operativa en todo el Oriente de Venezuela (Maturín, Anaco, San Tomé, Pariaguán, Puerto La Cruz y la Faja Petrolífera del Orinoco).
+
+## Datos Institucionales y Contacto
+- **Razón Social:** Laboratorio SUASCO, C.A.
+- **RIF:** J-30871900-5 (Fundación: 08/11/2010)
+- **Dirección:** Calle 2, Edificio SUASCO, PB, Parcela D13, Zona Parque Industrial (Copoindustria), El Tigre, Estado Anzoátegui, Zona Postal 6050, Venezuela.
+- **Teléfonos:** +58 412-699-4098 / +58 424-846-9795
+- **Correos:** contacto@suascolab.com / admon@suascolab.com
+- **Web:** https://suascolab.com
+- **Portal de Clientes:** https://clientes.suascolab.com
+- **Validador Criptográfico QR de Informes:** https://firmas.suascolab.com
+- **Instagram:** @lab_suasco
+- **Sistema de Calidad:** Plan de Calidad bajo lineamientos ISO 9001:2015, calibraciones trazables ante SENCAMER e IVIC, e inscripción ante el MinCyT (Dirección de Energía Atómica) para operación de densímetros nucleares.
+
+## Áreas de Especialización y Catálogo de Ensayos
+
+### 1. Suelos y Geotecnia (Normas ASTM / COVENIN / AASHTO)
+- `ENS-SU-01`: Contenido de humedad por Speedy (ASTM D4944)
+- `ENS-SU-02`: Contenido de agua / humedad en horno (ASTM D2216)
+- `ENS-SU-03`: Gravedad específica por picnómetro (ASTM D854)
+- `ENS-SU-04` / `05` / `06`: Granulometría por tamizado (76 mm y 40 mm) e hidrómetro (ASTM C136 / ASTM D422)
+- `ENS-SU-07`: Límites de consistencia / Atterberg (ASTM D4318)
+- `ENS-SU-08`: Ensayo de Azul de Metileno (COVENIN 3548 / ASTM C1777)
+- `ENS-SU-09` / `10`: Compactación Proctor Estándar y Modificado (ASTM D698 / ASTM D1557)
+- `ENS-SU-11`: CBR 3 puntos sumergido en laboratorio (ASTM D1883)
+- `ENS-SU-12`: CBR en sitio con Cono Dinámico de Penetración - DCP (ASTM D6951)
+- `ENS-SU-13` / `14` / `15`: Factor de esponjamiento en laboratorio y en sitio con Densímetro Nuclear
+- `ENS-SU-16`: Contenido de materia orgánica por ignición (AASHTO T267)
+- `ENS-SU-17`: Diseño de mezcla Suelo-Cemento (ASTM D1632)
+- `ENS-SU-18` / `19` / `23`: Toma de densidades para control de compactación y patrón en sitio con Densímetro Nuclear (ASTM D2922)
+- `ENS-SU-20` / `21` / `22`: Identificación visual-manual, peso unitario y factor de expansión
+- `ENS-SU-25`: Estudios geotécnicos y perforación con Prueba de Penetración Estándar - SPT (ASTM D1586) y apertura de calicatas
+- `ENS-SU-29`: Ensayo de expansión libre en consolidómetro
+
+### 2. Concreto, Morteros y Estructuras
+- `ENS-CO-01`: Asentamiento con Cono de Abrams (ASTM C143)
+- `ENS-CO-02`: Medición de asentamiento, elaboración, curado en piscina y ensayo a compresión de probetas cilíndricas (ASTM C31 / ASTM C39)
+- `ENS-CO-03`: Ensayo a la compresión de cilindros de concreto (COVENIN 338 / ASTM C39)
+- `ENS-CO-04` / `06`: Extracción de núcleos (Coredrills) en concreto y ensayo a la compresión (ASTM C42)
+- `ENS-CO-05`: Ensayo no destructivo con Esclerómetro / Índice de Rebote (ASTM C805)
+- `ENS-CO-07` / `08` / `09`: Diseño de mezclas de concreto (con y sin probetas de prueba) según COVENIN 633
+- `ENS-CO-10` / `11`: Toma, curado y ensayo a compresión de cubos de Grouting (COVENIN 2825 / ASTM C942 / C109)
+- `ENS-CO-12`: Ensayo a compresión de bloques de concreto
+
+### 3. Asfalto y Pavimentos
+- `ENS-AS-01`: Extracción de núcleos (Coredrills d=4") en pavimento asfáltico (ASTM C42 / AASHTO T245)
+- `ENS-AS-02` / `03`: Densidad real de pavimento con y sin parafina (ASTM D2726 / ASTM D1188)
+- `ENS-AS-04`: Extracción centrífuga de ligante asfáltico (ASTM D2172)
+- `ENS-AS-05`: Estabilidad y Flujo Marshall (ASTM D5581 / ASTM D6927)
+- `ENS-AS-06`: Gravedad específica máxima teórica - Método de Rice (ASTM D2041)
+- `ENS-AS-07`: Control de temperatura en planta y en obra
+- `ENS-AS-08`: Diseño completo de Mezcla Asfáltica
+
+### 4. Agregados Pétreos
+- `ENS-AG-01` / `02`: Granulometría para agregado fino (incluye colorimetría ASTM C40) y grueso (ASTM C136)
+- `ENS-AG-03` / `04`: Gravedad específica y absorción de agregado fino y grueso (ASTM C128 / ASTM C127)
+- `ENS-AG-05` / `06`: Peso volumétrico / unitario suelto y compacto (ASTM C29)
+- `ENS-AG-07` / `08`: Porcentaje de caras planas/alargadas y caras fracturadas (ASTM D4791 / ASTM D5821)
+
+### 5. Geofísica, Puesta a Tierra y Detección Subterránea
+- `ENS-SU-26`: Estudio de Resistividad Eléctrica de Suelos por Método Wenner de 4 electrodos (ASTM G57-20) con Fluke 1625-2
+- Certificación y medición de Sistemas de Puesta a Tierra (SPAT)
+- `ENS-SU-30` / `ENS-SU-31`: Detección subterránea de metales, tuberías e interferencias ferrosas y barrido magnético por hectárea con Schonstedt Maggie
+
+### 6. Topografía UAV, Geodesia y Química de Suelos/Aguas
+- `ENS-SU-24` / `MSC-EQ-01..03`: Levantamientos topográficos por hectárea, fotogrametría con Dron Industrial (UAV) y Estación GNSS Geodésica de Doble Frecuencia
+- `ENS-SU-27` / `28`: Análisis físico-químicos en muestras de suelo y agua (cloruros, sulfatos, pH, conductividad, turbiedad, sólidos disueltos, aceites y grasas según Standard Methods / Gaceta 36.395)
+
+### 7. Logística de Campo y Alquiler de Equipos
+- `MSC-EX-01`: Muestreo en campo
+- `MSC-EX-07` / `11` / `13`: Alquiler de kit para toma de cilindros, moldes de grouting y termómetros calibrados
+- `MSC-EX-08` / `09` / `12`: Transporte en Área Urbana, Área 1 (20-150 km) y Área 2 (>150 km)
+
+## Equipamiento Certificado Principal
+- Prensa semi-automática PILOT 4 (1000 kN) para compresión de concreto
+- Densímetros Nucleares Troxler 3430 y Humboldt 1032 + Detector Geiger-Müller Inspector
+- Resistivímetro Fluke 1625-2 (0.020 a 300 kΩ)
+- Localizador Magnético Subterráneo Schonstedt Maggie
+- Esclerómetro James Instruments N-M-250 / Controls N-24
+- Saca-núcleos Core Drill con brocas de diamante (2 1/4", 3 1/4", 4 1/4")
+- Balanzas de precisión Ohaus (AV-8101 y CD-11), hornos Humboldt, mufla Thermo Scientific, prensa Marshall y CBR Gilson
+- Aeronave UAV (Dron Industrial) y Estación GNSS Geodésica de Doble Frecuencia
+
+## Cómo Cotizar
+Enviar solicitud a `contacto@suascolab.com` adjuntando el RIF digital vigente de la empresa solicitante, ensayos requeridos y ubicación de la obra, o usar el configurador web en https://suascolab.com/#calculadora.

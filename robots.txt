@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Permitir indexación por motores de búsqueda e Inteligencias Artificiales (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://suascolab.com/sitemap.xml
+# Información estructurada para agentes de IA: https://suascolab.com/llms.txt
